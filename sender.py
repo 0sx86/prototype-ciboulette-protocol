@@ -30,7 +30,6 @@ class Client:
         return packet
 
     def send_packet(self, packet):
-        print(packet.show(dump=True))
         send(packet)
     
 

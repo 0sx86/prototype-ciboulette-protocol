@@ -6,9 +6,10 @@ class Ciboulette(Packet):
     name = "Ciboulette"
 
     fields_desc = [
+        ByteField("version", 0x1),
         StrField("identifier", "ciboulette"),
-        ByteField("action", 0x01),
-        ByteField("lenght", 0x00),
+        ByteField("action", 0x1),
+        ByteField("lenght", 0x0),
         StrField("command", "")
     ]
         
